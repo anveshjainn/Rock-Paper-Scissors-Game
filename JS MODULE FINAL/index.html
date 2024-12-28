@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Inter:wght@400;700&family=Merriweather+Sans:wght@400;502;800&family=Outfit:wght@400;700&family=Poppins:wght@300&family=Roboto:wght@100;300;400;500;700&family=Urbanist:ital@0;1&family=Work+Sans:wght@400;504;801&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" class="rel" />
+</head>
+
+<body>
+    <div class="score">
+        <div class ="rock">ROCK</div>
+        <br />
+        <div class ="paper">PAPER</div>
+        <br />
+        <div class ="scissors">SCISSORS</div>
+        
+        <div class="computer-score">
+            <div class="comp-title">COMPUTER</div>
+            <div class="score-title">SCORE</div>
+            <div class="comp-score">0</div>
+        </div>
+        <div class="user-score">
+            <div class="user-title">YOUR</div>
+            <div class="user-score-title">SCORE</div>
+            <div class="users-score">0</div>
+        </div>
+    </div>
+
+    <div class="game">
+        <img onclick="play('rock')" class="rock-img" src="./assets/rock.png" />
+        <img class="line1" src="./assets/Line 1.png" alt="" />
+        <img  onclick="play('scissors')" class="scissors-img"    src="./assets/scissors.png" />
+        <img class="line2" src="./assets/Line 2.png" alt="" />
+        <img onclick="play('paper')" class="paper-img" src="./assets/paper.png" />
+        <img class="line3" src="./assets/Line 3.png" alt="" />
+    </div>
+
+    <div class="result-won">
+        <div class="result">YOU PICKED</div>
+        <img class="won-circle" src="./assets/wincircle.png" width="180" height="180" />
+        <img class="user-rock" src="./assets/rock.png" width="155" height="155" />
+        <img class="user-paper" src="./assets/paper.png" width="155" height="155" />
+        <img class="user-scissor" src="./assets/scissors.png" width="155" height="155" />
+        
+        <div class="comp-result">PC PICKED</div>
+        <img class="comp-rock" src="./assets/rock.png" width="155" height="155" />
+        <img class="comp-paper" src="./assets/paper.png" width="155" height="155" />
+        <img class="comp-scissor" src="./assets/scissors.png" width="155" height="155" />
+
+        <div class="you-result">YOU WIN</div>
+        <div class="against-comp">AGAINST PC</div>
+        <button class="play-again" onclick="gamepage()">PLAY AGAIN</button> 
+    </div>
+
+    <div class="result-lost">
+        <div class="result">YOU PICKED</div>
+        <img class="lost-circle" src="./assets/wincircle.png" width="180" height="180" />
+        <img class="user-rock-lost" src="./assets/rock.png" width="155" height="155" />
+        <img class="user-paper-lost" src="./assets/paper.png" width="155" height="155" />
+        <img class="user-scissor-lost" src="./assets/scissors.png" width="155" height="155" />
+
+        <div class="comp-result">PC PICKED</div>
+        <img class="comp-rock-lost" src="./assets/rock.png" width="155" height="155" />
+        <img class="comp-paper-lost" src="./assets/paper.png" width="155" height="155" />
+        <img class="comp-scissor-lost" src="./assets/scissors.png" width="155" height="155" />
+
+        <div class="you-result">YOU LOST</div>
+        <div class="against-comp">AGAINST PC</div>
+        <button id="play-again" onclick="gamepage()"> PLAY AGAIN </button>
+    </div>
+
+    <div class="result-tie">
+        <div class="result">YOU PICKED</div>
+        <img class="user-rock-tie" src="./assets/rock.png" width="155" height="155" />
+        <img class="user-paper-tie" src="./assets/paper.png" width="155" height="155" />
+        <img class="user-scissor-tie" src="./assets/scissors.png" width="155" height="155" />
+
+        <div class="comp-result">PC PICKED</div>
+        <img class="comp-rock-tie" src="./assets/rock.png" width="155" height="155" />
+        <img class="comp-paper-tie" src="./assets/paper.png" width="155" height="155" />
+        <img class="comp-scissor-tie" src="./assets/scissors.png" width="155" height="155" />
+
+        <div class="you-result">TIE UP</div>
+        <button class="play-again" onclick="gamepage()">REPLAY</button>
+    </div>
+
+    <button class="rules">RULES</button>
+    <div class="rules-popup">
+        <img class="game-rules" src="./assets/rules.png" alt="" />
+        <span class="rules-close"> &times; </span>
+    </div>
+
+    <button class="next" onclick="opennewpage()">NEXT</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

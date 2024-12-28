@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+    background-color:#89C15E;
+    ;
+}
+
+.score {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    height: 180px;
+    top: 70px;
+    left: 400px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.rock{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: white;
+    top: 15px;
+    left: 18px;
+    width: 135px;
+    height: 37px;
+}
+
+.paper{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: white;
+    top: 60px;
+    left: 20px;
+    width: 150px;
+    height: 37px;
+}
+
+.scissors{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: white;
+    top: 100px;
+    left: 20px;
+    width: 235px;
+    height: 35px;
+}
+
+.computer-score{
+    position: absolute;
+    width: 140px;
+    height: 130px;
+    top: 15px;
+    border-radius: 10px;
+    background-color: white;
+    left: 475px;
+}
+
+.user-score{
+    position: absolute;
+    width: 140px;
+    height: 130px;
+    top: 15px;
+    border-radius: 10px;
+    background-color: white;
+    left: 640px;
+}
+
+.comp-title{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: #656565;
+    width: 100px;
+    height: 20px;
+    top: 7px;
+    left: 13px;
+}
+
+.score-title{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: #656565;
+    font-weight: 700;
+    width: 60px;
+    height: 15px;
+    top: 30px;
+    left: 35px;
+}
+
+.user-title{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: #656565;
+    width: 50px;
+    height: 15px;
+    top: 7px;
+    left: 40px;
+}
+
+.user-score-title{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: .1em;
+    text-align: left;
+    color: #656565;
+    font-weight: 700;
+    width: 60px;
+    height: 15px;
+    top: 30px;
+    left: 35px;
+}
+
+.comp-score{
+    position: absolute;
+    width: 80px;
+    height: 65px;
+    top: 50px;
+    left: 30px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    color: #252525;
+}
+
+.users-score{
+    position: absolute;
+    width: 80px;
+    height: 65px;
+    top: 50px;
+    left: 30px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    color: #252525;
+}
+
+.line1{
+    position: absolute;
+    z-index: -1;
+    width: 152px;
+    top: 454px;
+    left: 800px;
+}
+
+.line2{
+    position: absolute;
+    z-index: -1;
+    width: 95px;
+    top: 498px;
+    left: 937px;
+}
+
+.line3{
+    position: absolute;
+    z-index: -1;
+     width: 95px;
+    top: 521px;
+    left: 787px;
+}
+
+.game{
+    position: absolute;
+    top: -70px;
+    left: -90px;
+}
+
+.rock-img{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 400px;
+    cursor: pointer;
+    left: 690px;
+}
+
+.scissors-img{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 400px;
+    cursor: pointer;
+    left: 933px;
+}
+
+.paper-img{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 400px;
+    cursor: pointer;
+    top: 600px;
+    left: 820px;
+}
+
+.result{
+    position: absolute;
+    width: 130px;
+    height: 15px;
+    top: 330px;
+    left: 505px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: white;
+}
+
+.won-circle{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 360px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 62px 0px #00000021;
+    z-index: -1;
+    left: 400px;
+}
+
+.lost-circle{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 360px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 62px 0px #00000021;
+    z-index: -1;
+    left: 870px;
+}
+
+.user-rock, .user-paper, .user-scissor,
+.comp-rock, .comp-paper, .comp-scissor,
+.user-rock-lost, .user-paper-lost, .user-scissor-lost,
+.comp-rock-lost, .comp-paper-lost, .comp-scissor-lost,
+.user-rock-tie, .user-paper-tie, .user-scissor-tie,
+.comp-rock-tie, .comp-paper-tie, .comp-scissor-tie {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    top: 415px;
+    display: none;
+}
+
+.user-rock, .user-paper, .user-scissor,
+.user-rock-lost, .user-paper-lost, .user-scissor-lost,
+.user-rock-tie, .user-paper-tie, .user-scissor-tie {
+    left: 462px;
+}
+
+.comp-rock, .comp-paper, .comp-scissor,
+.comp-rock-lost, .comp-paper-lost, .comp-scissor-lost,
+.comp-rock-tie, .comp-paper-tie, .comp-scissor-tie {
+    left: 924px;
+}
+
+.result{
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.comp-result{
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+  width: 130px;
+  height: 16px;
+  top: 330px;
+  left: 965px;
+  font-size: 17px;
+}
+
+.you-result{
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+  width: 209px;
+  height: 36px;
+  top: 445px;
+  left: 685px;
+  font-size: 39px;
+  text-align: center;
+}
+
+.against-comp{
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 15px;
+    width: 168px;
+    height: 31px;
+    top: 510px;
+    left: 710px;
+    font-size: 25px;
+    text-align: center;
+    display: inline;
+    white-space: nowrap;
+}
+
+
+
+.result-won, .result-lost, .result-tie{
+    display: none;
+}
+
+.game-rules{
+    position: absolute;
+    width: 303px;
+    height: 367px;
+    left: 1220px;
+    top: 270px;
+}
+
+.rules-close{
+    position: absolute;
+    width: 55px;
+    top: 275px;
+    left: 1460px;
+    font-size: 50px;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+}
+
+.play-again{
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    font-size: 21px;
+    text-align: center;
+    cursor: pointer;
+    width: 175px;
+    height: 45px;
+    top: 565px;
+    left: 675px;
+    margin-left: 2.5rem;
+    background: #FFFFFF;
+    color: #6B6B6B;
+    font-size: 15px;
+}
+
+.rules{
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    font-size: 21px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    top: 650px;
+    background-color: rgba(140, 196, 97, 1);
+    left: 1385px;
+}
+
+.next{
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    font-size: 21px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    top: 650px;
+    background-color: rgba(140, 196, 97, 1);
+    left: 1200px;
+    display: none;
+}
